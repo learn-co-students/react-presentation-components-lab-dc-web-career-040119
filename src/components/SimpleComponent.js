@@ -12,13 +12,13 @@ export default class SimpleComponent extends Component {
 
   handleClick = () => {
     this.setState({
-      mood: [...mood, !this.state.mood]
+      mood: [...mood, mood: sad]
     })
   }
 
   render(){
     return(
-      <div onClick={this.handleClick}>
+      <div onClick={this.handleClick}> I am just 
         {this.state.mood}
       </div>
     )
