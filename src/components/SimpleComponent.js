@@ -6,20 +6,19 @@ export default class SimpleComponent extends Component {
     super()
 
     this.state = {
-      mood: happy
+      mood: 'happy'
     }
   }
 
   handleClick = () => {
     this.setState({
-      mood: [...mood, mood: sad]
+      mood: 'sad'
     })
   }
 
   render(){
     return(
-      <div onClick={this.handleClick}> I am just 
-        {this.state.mood}
+      <div onClick={this.handleClick}>{this.state.mood}
       </div>
     )
   }
